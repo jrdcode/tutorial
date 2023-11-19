@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   changePage(pageNum) {
-    const url = 'https://reqres.in/api/users?page=${pageNum}'
+    const url = `https://reqres.in/api/users?page=${pageNum}`
 
     fetch(url)
       .then((res) => res.json())
